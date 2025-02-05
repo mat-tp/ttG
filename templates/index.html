@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Traveler's Guestbook</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="min-h-screen bg-gradient">
+        <div class="container">
+            <div class="header">
+                <h1>Time Traveler's Guestbook</h1>
+                <p>Leave your mark across the temporal plane</p>
+            </div>
+            
+            <div class="main-content">
+                <div class="left-column">
+                    <div class="time-portal">
+                        <div class="clock">
+                            <div class="clock-face">
+                                <div class="hand hour-hand"></div>
+                                <div class="hand minute-hand"></div>
+                                <div class="hand second-hand"></div>
+                                <div class="center-dot"></div>
+                            </div>
+                            <div class="digital-time"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="visitor-form">
+                        <h2>Sign the Guestbook</h2>
+                        <form id="visitorForm">
+                            <input type="text" id="visitorName" placeholder="Enter your name, time traveler...">
+                            <button type="submit">Sign</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="right-column">
+                    <h2>Recent Visitors</h2>
+                    <div id="visitorList" class="visitor-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
