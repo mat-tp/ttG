@@ -63,7 +63,7 @@ Planning to expand across multiple timelines with:
 
 1. Clone this temporal repository:
 ```bash
-git clone https://github.com/yourusername/time-travelers-guestbook.git
+git clone https://github.com/mat-tp/ttG.git
 ```
 
 2. Create a temporal environment:
